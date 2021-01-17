@@ -2,7 +2,7 @@
 import users from './users.js'
 const getUsersWithGender = (users, gender) => {
   // твой код
- return users.filter(user => user.gender === gender).map(user=>user.name)
+  return users.filter(user => user.gender === gender).map(user => user.name);
   
 };
 
