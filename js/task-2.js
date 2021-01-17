@@ -2,7 +2,7 @@
 import users from './users.js'
 const getUsersWithEyeColor = (users, color) => {
   // твой код
-    return users.filter(user => user.color);
+    return users.filter(({eyeColor}) => eyeColor === color).map(user => user.name);
 };
 //users.filter(user => Object.values(user) === color)//user.color === color);
 console.log(getUsersWithEyeColor(users, 'blue'));
